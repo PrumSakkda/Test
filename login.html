@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Loginpage</title>
+    <style>
+        body {
+            background-color: #FF69B4;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        form {
+            width: 320px;
+            box-shadow: 0px 0px 1px 1px whitesmoke;
+            padding: 15px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: #FFB6C1;
+            border-radius: 20px;
+        }
+
+        .control {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .text {
+            text-align: left;
+            color: white;
+            border-radius: 20px;
+        }
+
+        .item {
+            border-radius: 5px;
+            height: 35px;
+            text-align: center;
+            text-shadow: whitesmoke;
+        }
+
+        .login {
+            background-color: whitesmoke;
+            color: blackwhite;
+            height: 35px;
+            width: 300px;
+            margin-left: 15px;
+            margin-block: 50px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 1px 1px whitesmoke;
+        }
+        .signup{
+            background-color: #C71585;
+            color: white;
+            height: 35px;
+            width: 300px;
+            margin-left: 15px;
+            margin-block: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 1px 1px whitesmoke;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Login html</h1>
+    <form action="#">
+        <div class="text">
+            <h2>Log In to ISTAD</h2>
+        </div>
+        <div class="control">
+            <label for="Username">Username</label>
+            <input class="item" id="Username" type="text" placeholder="Enter Your Username">
+        </div>
+        <div class="control">
+            <label for="Password">Password </label>
+            <input class="item" id="password" type="password" placeholder="Enter Password">
+        </div>
+        <div>
+            <input type="checkbox" style="margin-bottom: 20px;"> <a href="index.html">Remember</a>
+            <a href="index.html" style="margin-left: 135px;">Forgotten?</a>
+        </div>
+        <div>
+            <input class="login" type="submit" value="Log in">
+        </div>
+        <div>
+            <input class="signup" type="submit" value="Sign Up">
+            <a href="index.html" style="padding: 20px; margin-left: 70px;">Don't have an account?</a>
+        </div>
+
+    </form>
 </body>
+
 </html>
